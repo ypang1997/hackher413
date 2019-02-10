@@ -4,7 +4,7 @@ let message3 = document.querySelector('.msg3');
 
 let input = document.querySelector('#message');
 let arrayMsg = [message1, message3];
-let arrayOther = [message2,]
+let arrayOther = [message2]
 
 let counter = 0;
 
@@ -19,10 +19,13 @@ button.onclick = function() {
             arrayMsg[i].classList.remove("displayNone");
             input.value = "";
             setTimeout(function(){ 
-                alert("Hello"); }, 4000);
+                arrayOther[i].classList.remove("displayNone");
+            }, 4000);
 
             break;
         }
         
     }
 };
+
+
