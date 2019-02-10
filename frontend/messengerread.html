@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav role="navigation" class="hamburger-menu">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <p class="menu-description">Menu</p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#"><li>Profile</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>Settings</li></a>
+                </ul>
+            </div>
+        </nav>
+        <img src="assets/logored.png" class="logo-red">
+        <!--<h1 class="title-chat">Messages</h1> -->
+    </header>
+    <main>
+        <ul class="messenger-list">
+            <li class="conversation" id="firstConvo"> 
+                <a href="conversation.html" class="view-conversation">   
+                <img class="icon" id="firstImg" src="assets/icon4.png">
+                <div class="message-details">
+                    <h2>Vanessa Penn</h2>
+                    <p>I'd love to but I can't thi...</p>
+                </div>
+                <button class="read-message"><img src="assets/viewlite.png" class="view"></button>
+                </a>
+            </li>
+            <li class="conversation"> 
+                <a href="chat.html" class="view-conversation">   
+                <img class="icon" src="assets/icon1.png">
+                <div class="message-details">
+                    <h2>Mary Deschamps</h2>
+                    <p>I think I'm going to order...</p>
+                </div>
+                <button class="read-message"><img src="assets/viewlite.png" class="view"></button>
+                </a>
+            </li>
+            <li class="conversation">
+                <a href="chat.html" class="view-conversation">    
+                <img class="icon" src="assets/icon3.png">
+                <div class="message-details">
+                    <h2>Melissa Grahm</h2>
+                    <p>Yeah! I think that's a grea...</p>
+                </div>
+                <button class="read-message"><img src="assets/viewlite.png" class="view"></button>
+                </a>
+            </li>
+            <li class="conversation"> 
+                <a href="chat.html" class="view-conversation">   
+                <img class="icon" src="assets/icon2.png">
+                <div class="message-details">
+                    <h2>Sofie Oscar</h2>
+                    <p>That's exactly what I was t...</p>
+                </div>
+                <button class="read-message"><img src="assets/viewlite.png" class="view"></button>
+                </a>
+            </li> 
+            <li class="conversation">
+                <a href="chat.html" class="view-conversation">    
+                <img class="icon" src="assets/icon5.png">
+                <div class="message-details">
+                    <h2>Tanya DiMarco</h2>
+                    <p>She loved it, thank you so ...</p>
+                </div>
+                <button class="read-message"><img src="assets/viewlite.png" class="view"></button>
+                </a>
+            </li>   
+        </ul>
+    </main>  
+    <footer>
+        <ul class="footer">
+            <li><i class="fas fa-comments"></i></li>
+            <li><i class="fas fa-camera"></i></li>
+            <li><a href="map.html"><i class="fas fa-map-marked"></i></a></li>
+        </ul>
+    </footer>
+    <script src="scripts/unread.js"></script>
+
+</body>
+</html>
