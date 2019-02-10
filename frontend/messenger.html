@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -30,12 +29,12 @@
     </header>
     <main>
         <ul class="messenger-list">
-            <li class="conversation unread"> 
+            <li class="conversation unread" id="firstConvo"> 
                 <a href="conversation.html" class="view-conversation">   
-                <img class="icon unreadimg" src="assets/icon4.png">
+                <img class="icon unreadimg" id="firstImg" src="assets/icon4.png">
                 <div class="message-details">
                     <h2>Vanessa Penn</h2>
-                    <p>I think I'm going to order...</p>
+                    <p>Hey Jess! How's Sarah? Sh...</p>
                 </div>
                 <button class="read-message">></button>
                 </a>
@@ -84,11 +83,12 @@
     </main>  
     <footer>
         <ul class="footer">
-            <li>*</li>
-            <li><i class="fas fa-comments"></i>
-            </li>
+            <li><i class="fas fa-comments"></i></li>
+            <li><i class="fas fa-camera"></i></li>
             <li>*</li>
         </ul>
     </footer>
+    <script src="scripts/unread.js"></script>
+
 </body>
 </html>
