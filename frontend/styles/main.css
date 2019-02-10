@@ -23,7 +23,7 @@ h1, h2 {
 }
 
 h1 {
-    color: #83818B;
+
     font-size: 1.2rem;
 }
 
@@ -36,6 +36,8 @@ header {
     border-bottom: 1px solid #cdcdcd;
     padding: 0.9rem 0.5rem;
     height: 80px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 10px 10px 20px, rgba(0, 0, 0, 0.2) 0px 0px 1px;
 }
 
 .hamburger-menu{
@@ -46,15 +48,15 @@ header {
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 700;
-    color: #f1a69b;
-    margin-bottom: 0.3rem;
+    color: #e04c3d;
 }
 
 .title-chat {
     display: inline;
     margin-left: 8.8rem;
     font-weight: 700;
-    color: #ff6347;
+    color: #e04c3d;
+    padding-top: 0.2rem;
 }
 
 .icon {
@@ -80,8 +82,9 @@ header {
     height: 80px;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgb(241, 241, 241);
     background-color: rgb(252, 252, 252);
+    
 }
 
 .message-details {
@@ -156,7 +159,7 @@ main {
    margin-bottom: 5px;
    position: relative;
    
-   background: #f1a69b;
+   background: #e04c3d;
    border-radius: 3px;
    
    z-index: 1;
@@ -219,7 +222,7 @@ main {
    padding: 50px;
    padding-top: 125px;
    
-   background: #f1a69b;
+   background: #e04c3d;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
@@ -258,8 +261,13 @@ main {
 .footer li {
     height: 30px;
     width: 33.33%;
-    background-color: pink;
+    background-color: #e04c3d;
     float: left;
     text-decoration: none;
 
+}
+
+.logo-red {
+  width: 100px;
+  float: right;
 }
