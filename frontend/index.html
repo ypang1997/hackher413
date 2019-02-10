@@ -3,90 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home Chat</title>
+    <title>Soteria Log In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/login.css" />
     <script src="main.js"></script>
 </head>
 <body>
-    <header>
-        <nav role="navigation" class="hamburger-menu">
-            <div id="menuToggle">
-                <input type="checkbox"/>
-                <p class="menu-description">Menu</p>
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <a href="#"><li>Profile</li></a>
-                    <a href="#"><li>Contactst</li></a>
-                    <a href="#"><li>Settings</li></a>
-                </ul>
-            </div>
-        </nav>
-        <h1 class="title-chat">Messages</h1>
-    </header>
-    <main>
-        <ul class="messenger-list">
-            <li class="conversation"> 
-                <a href="#" class="view-conversation">   
-                <img class="icon" src="assets/icon1.png">
-                <div class="message-details">
-                    <h2>Vanessa Penn</h2>
-                    <p>I think I'm going to order...</p>
-                </div>
-                <button class="read-message">></button>
-                </a>
-            </li>
-            <li class="conversation"> 
-                <a href="#" class="view-conversation">   
-                <img class="icon" src="assets/icon2.png">
-                <div class="message-details">
-                    <h2>Mary Deschamps</h2>
-                    <p>I think I'm going to order...</p>
-                </div>
-                <button class="read-message">></button>
-                </a>
-            </li>
-            <li class="conversation">
-                <a href="#" class="view-conversation">    
-                <img class="icon" src="assets/icon3.png">
-                <div class="message-details">
-                    <h2>Melissa Grahm</h2>
-                    <p>I think I'm going to order...</p>
-                </div>
-                <button class="read-message">></button>
-                </a>
-            </li>
-            <li class="conversation"> 
-                <a href="#" class="view-conversation">   
-                <img class="icon" src="assets/icon4.png">
-                <div class="message-details">
-                    <h2>Sofie Oscar</h2>
-                    <p>I think I'm going to order...</p>
-                </div>
-                <button class="read-message">></button>
-                </a>
-            </li> 
-            <li class="conversation">
-                <a href="#" class="view-conversation">    
-                <img class="icon" src="assets/icon5.png">
-                <div class="message-details">
-                    <h2>Name Of Person</h2>
-                    <p>I think I'm going to order...</p>
-                </div>
-                <button class="read-message">></button>
-                </a>
-            </li>   
-        </ul>
-    </main>  
-    <footer>
-        <ul class="footer">
-            <li>*</li>
-            <li>*</li>
-            <li>*</li>
-        </ul>
-    </footer>
+    <img class="logo">
+    <form action="/messenger.html">
+        <div class="username">
+        <label for="name">Email</label>
+    <input type="email" name="login" id="username" required>
+    </div>
+    <div class="password">
+    <label for="name">Password</label>
+    <input type="password" name="login" id="password" required minlength="4">
+    </div>
+    <input type="submit" value="Log In">
+    </form>
 </body>
 </html>
