@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(252, 252, 252)">
+    <header>
+        <nav role="navigation" class="hamburger-menu">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <p class="menu-description">Menu</p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#"><li>Profile</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>Settings</li></a>
+                </ul>
+            </div>
+        </nav>
+        <img src="assets/logored.png" class="logo-red">
+        <!--<h1 class="title-chat">Messages</h1> -->
+    </header>
+    <main class="mainChat">
+        <ul class="messenger-list">
+            <li class="conversation" style="border: none"> 
+                <img class="icon" src="assets/icon4.png">
+                <div class="message-details">
+                    <h2>Vanessa Penn</h2>
+                </div>
+            </li>
+        </ul>
+        <div class="otherMsg">
+            <p>Hey Jess! How's Sarah? She forgot her sweater in class and Maddie picked it up for her!</p>
+        </div>
+        <div class="userMsg displayNone msg1">
+            <p class="">Hi Vanessa! Thank you so much. I'll remind her to grab it from Maddie.</p>
+        </div>
+        <div class="otherMsg displayNone msg2">
+            <p class="">How are you doing? Do you want to go to a yoga class with me? I saw a picture of the studio on Facebook.</p>
+        </div>
+        <div class="otherMsg displayNone msg3">
+                <p class="">How are you doing? Do you want to go to a yoga class with me? I saw a picture of the studio on Facebook.</p>
+            </div>
+        
+        
+    </main> 
+    <div class="message-input">
+            <input type="text" name="message" id="message"><button><img  id="send-btn" src="assets/sendbtn.png" class="send-btn"></button>
+    </div> 
+    <footer>
+        
+        <ul class="footer">
+            <li>*</li>
+            <li><a href="messenger.html"><i class="fas fa-comments"></i></a>
+            </li>
+            <li>*</li>
+        </ul>
+    </footer>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
