@@ -1,3 +1,68 @@
-body{
-    background-color: #ff6347;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #fff;
+    color: hsl(0, 0%, 23%); 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    width: 100vw;
+    height: 100vw;
+    background-image: url("/frontend/assets/background.png");
+    background-size: cover;
+}
+
+
+label {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+input {
+    width: 250px;
+    height: 34px;
+    border-radius: 10px;
+    border: none; 
+    margin-bottom: 0.65rem;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+    padding: 0;
+    padding-top: 10rem;
+}
+
+input[type="submit"] {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    height: 34px;
+    text-transform: uppercase;
+    margin-top: 0.85rem;
+}
+
+input:focus { 
+    border: #fff;
+  }
+
+.logo {
+    width: 60%;
+    margin: auto;
+    margin-top: 6rem;
 }
