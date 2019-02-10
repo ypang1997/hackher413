@@ -8,17 +8,13 @@
 
 body {
     font-size: 16px;
-    background-color: #f3f3f3;
-}
-
-header {
-    margin: auto;
-    border-bottom: 1px solid rgb(197, 197, 197);
-    padding: 0.9rem 0.5rem;
+    background-color: #fff;
+    color: hsl(0, 0%, 23%); 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
 }
 
 h1, h2 {
-    font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase;
@@ -30,14 +26,23 @@ h1 {
 }
 
 h2 {
-    font-size: 0.75rem;
+    font-size: 1.1rem;
+}
+
+header {
+    margin: auto;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 0.9rem 0.5rem;
+}
+
+.hamburger-menu{
+    height: 20px;
 }
 
 .title-chat {
     display: block;
     margin-left: 1rem;
     text-align: center;
-
 }
 
 .icon {
@@ -46,12 +51,33 @@ h2 {
     border-radius: 50%;
     border: 2px solid rgb(218, 218, 218);
     margin-left: 2rem;
+    float: left;
+}
+
+.conversation img {
+    display: inline;
+}
+
+.conversation h2 {
+    display: inline;
+    vertical-align: top;
+}
+
+.conversation {
+    height: 70px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-details {
+    float: left;
+    margin-left: 2rem;
 }
 
 main {
     margin: auto;
+    padding-top: 1.5rem;
 }
- 
  
  a {
    text-decoration: none;
@@ -66,8 +92,8 @@ main {
  #menuToggle {
    display: block;
    position: relative;
-   top: 50px;
-   left: 50px;
+   top: 20px;
+   left: 15px;
    
    z-index: 1;
    
@@ -160,7 +186,8 @@ main {
  #menu
  {
    position: absolute;
-   width: 300px;
+   width: 200px;
+   height: 100vh;
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
