@@ -8,17 +8,15 @@
 
 body {
     font-size: 16px;
-    background-color: #f3f3f3;
-}
-
-header {
-    margin: auto;
-    border-bottom: 1px solid rgb(197, 197, 197);
-    padding: 0.9rem 0.5rem;
+    background-color: #fff;
+    color: hsl(0, 0%, 23%); 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    width: 100vw;
+    height: 100vw;
 }
 
 h1, h2 {
-    font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.1rem;
     text-align: center;
     text-transform: uppercase;
@@ -30,14 +28,33 @@ h1 {
 }
 
 h2 {
-    font-size: 0.75rem;
+    font-size: 1.1rem;
+}
+
+header {
+    margin: auto;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 0.9rem 0.5rem;
+    height: 80px;
+}
+
+.hamburger-menu{
+     height: 10px;
+}
+
+.menu-description {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #f1a69b;
+    margin-bottom: 0.3rem;
 }
 
 .title-chat {
-    display: block;
-    margin-left: 1rem;
-    text-align: center;
-
+    display: inline;
+    margin-left: 8.8rem;
+    font-weight: 700;
+    color: #ff6347;
 }
 
 .icon {
@@ -46,12 +63,49 @@ h2 {
     border-radius: 50%;
     border: 2px solid rgb(218, 218, 218);
     margin-left: 2rem;
+    float: left;
+}
+
+.conversation img {
+    display: inline;
+}
+
+.conversation h2 {
+    display: inline;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.conversation {
+    height: 80px;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    background-color: rgb(252, 252, 252);
+}
+
+.message-details {
+    float: left;
+    margin-left: 2rem;
+
 }
 
 main {
     margin: auto;
+    clear: both;
 }
- 
+
+.read-message {
+    font-size: 2rem;
+    float: right;
+    margin-right: 2rem;
+    vertical-align: top;
+    color: tomato;
+    font-weight: 200;
+}
+
+
+/*   HAMBURGER  */
  
  a {
    text-decoration: none;
@@ -66,8 +120,7 @@ main {
  #menuToggle {
    display: block;
    position: relative;
-   top: 50px;
-   left: 50px;
+   left: 15px;
    
    z-index: 1;
    
@@ -103,7 +156,7 @@ main {
    margin-bottom: 5px;
    position: relative;
    
-   background: #cdcdcd;
+   background: #f1a69b;
    border-radius: 3px;
    
    z-index: 1;
@@ -133,7 +186,7 @@ main {
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   background: #fff;
  }
  
  /*
@@ -160,12 +213,13 @@ main {
  #menu
  {
    position: absolute;
-   width: 300px;
+   width: 200px;
+   height: 100vh;
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
    
-   background: #ededed;
+   background: #f1a69b;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
@@ -180,6 +234,10 @@ main {
  {
    padding: 10px 0;
    font-size: 22px;
+   color: #fff;
+   font-weight: 700;
+   margin-bottom: 1.5rem;
+  
  }
  
  /*
@@ -190,3 +248,18 @@ main {
    transform: none;
  }
 
+ footer {
+    clear: both;
+   bottom:0;
+   width:100%;
+   height:60px;
+ }
+
+.footer li {
+    height: 30px;
+    width: 33.33%;
+    background-color: pink;
+    float: left;
+    text-decoration: none;
+
+}
